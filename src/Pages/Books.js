@@ -1,3 +1,9 @@
-const Books = () => <h1>Book page</h1>;
+import BooksList from '../Components/BooksList';
+
+const Books = () => (
+  <div>
+    <BooksList />
+  </div>
+);
 
 export default Books;

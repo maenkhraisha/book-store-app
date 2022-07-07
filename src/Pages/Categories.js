@@ -1,3 +1,3 @@
-const Categories = () => <h1>Categories page</h1>;
+const Categories = () => <input type="button" value="Check status" />;
 
 export default Categories;
