@@ -1,10 +1,18 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Books from './Pages/Books';
+import Categories from './Pages/Categories';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Book Store</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </Router>
   );
 }
 
