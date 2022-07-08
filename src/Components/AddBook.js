@@ -14,6 +14,7 @@ const AddBook = () => (
         <option key={category.key} value={category.title}>{category.title}</option>
       ))}
     </select>
+    <button type="button">ADD BOOK</button>
   </div>
 );
 export default AddBook;
