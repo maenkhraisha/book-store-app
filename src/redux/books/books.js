@@ -12,10 +12,9 @@ export function removeBook(id) {
 const reducer = (state = [{}], action) => {
   switch (action.type) {
     case ADD_BOOK:
-        return state= [...state,
-            action.payload];
+      return ([...state, action.payload]);
     case REMOVE_BOOK:
-        return state.filter(book=> book.id !== action.id)
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }

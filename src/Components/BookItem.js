@@ -17,13 +17,13 @@ const bookList = [
 const BookItem = () => (
   <div>
     {bookList.map((book) => (
-      <div key={book.key} className="book-item-container">
-        <h2 key={book.key}>{book.category}</h2>
-        <h1 key={book.key}>{book.title}</h1>
-        <h3 key={book.key}>{book.author}</h3>
-        <button key={book.key} type="button">comment</button>
-        <button key={book.key} type="button">remove</button>
-        <button key={book.key} type="button">edit</button>
+      <div key={book.id} className="book-item-container">
+        <h2>{book.category}</h2>
+        <h1>{book.title}</h1>
+        <h3>{book.author}</h3>
+        <button type="button">comment</button>
+        <button type="button">remove</button>
+        <button type="button">edit</button>
       </div>
     ))}
   </div>
