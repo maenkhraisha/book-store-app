@@ -6,7 +6,6 @@ export function addBook(book) {
 }
 
 export function removeBook(id) {
-  console.log('remove me', id);
   return { type: REMOVE_BOOK, payload: id };
 }
 
