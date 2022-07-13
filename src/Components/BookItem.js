@@ -1,32 +1,32 @@
-const bookList = [
-  {
-    id: 1,
-    title: 'The Hunger Games',
-    category: 'Action',
-    author: 'Suzanne Collinse',
-    completed: 80,
-  },
-  {
-    id: 2,
-    title: 'Dune',
-    category: 'Science Fiction',
-    author: 'Frank Herbert',
-    completed: 80,
-  },
-];
-const BookItem = () => (
-  <div>
-    {bookList.map((book) => (
-      <div key={book.id} className="book-item-container">
-        <h2>{book.category}</h2>
-        <h1>{book.title}</h1>
-        <h3>{book.author}</h3>
+import PropTypes from 'prop-types';
+
+const BookItem = ({
+  id,
+  title,
+  category,
+  author,
+  onRemove,
+}) => (
+  <li key={id}>
+    <div className="book-item-container">
+      <p>{category}</p>
+      <h3>{title}</h3>
+      <p>{author}</p>
+      <div className="button-container">
         <button type="button">comment</button>
-        <button type="button">remove</button>
+        <button onClick={onRemove} type="button">remove</button>
         <button type="button">edit</button>
       </div>
-    ))}
-  </div>
+    </div>
+  </li>
 );
+
+BookItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  onRemove: PropTypes.func.isRequired,
+};
 
 export default BookItem;

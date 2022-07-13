@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .book-item-container {
   border: 1px solid lightgray;
   margin: 2%;
