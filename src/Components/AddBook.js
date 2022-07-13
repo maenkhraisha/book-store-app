@@ -16,7 +16,6 @@ const AddBook = () => {
     const bookCategoryElement = event.target.elements.bookCategory;
 
     let bookId = parseInt(booksList.length + 1, 10);
-    console.log(bookId);
 
     dispatch(
       addBook({

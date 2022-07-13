@@ -6,6 +6,7 @@ export function addBook(book) {
 }
 
 export function removeBook(id) {
+  console.log('remove me', id);
   return { type: REMOVE_BOOK, payload: id };
 }
 
@@ -14,7 +15,7 @@ const reducer = (state = [], action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id);
+      return state.filter((book) => book.id !== action.payload);
     default:
       return state;
   }

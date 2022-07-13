@@ -5,6 +5,7 @@ const BookItem = ({
   title,
   category,
   author,
+  onRemove,
 }) => (
   <li key={id}>
     <div className="book-item-container">
@@ -13,7 +14,7 @@ const BookItem = ({
       <p>{author}</p>
       <div className="button-container">
         <button type="button">comment</button>
-        <button type="button">remove</button>
+        <button onClick={onRemove} type="button">remove</button>
         <button type="button">edit</button>
       </div>
     </div>
@@ -25,6 +26,7 @@ BookItem.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
+  onRemove: PropTypes.func.isRequired,
 };
 
 export default BookItem;

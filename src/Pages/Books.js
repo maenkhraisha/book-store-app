@@ -1,10 +1,12 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import BookItem from '../Components/BookItem';
 import AddBook from '../Components/AddBook';
+import { removeBook } from '../redux/books/books';
 
 const Books = () => {
   const booksList = useSelector((state) => state.books);
+  const dispatch = useDispatch();
   return (
     <div>
       <ul>
@@ -15,6 +17,7 @@ const Books = () => {
             title={book.title}
             category={book.category}
             author={book.author}
+            onRemove={() => dispatch(removeBook(book.id))}
           />
         ))}
       </ul>
