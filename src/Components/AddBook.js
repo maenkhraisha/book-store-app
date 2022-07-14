@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/books';
+// import { addBook } from '../redux/books/books';
+import { addBookMiddleware } from '../redux/middleware';
+
 // const categoriesList = [
 //   { id: 1, title: 'Action' },
 //   { id: 2, title: 'Sience Fiction' },
@@ -17,14 +19,12 @@ const AddBook = () => {
 
     let bookId = parseInt(booksList.length + 1, 10);
 
-    dispatch(
-      addBook({
-        id: bookId,
-        title: bookTilteElement.value,
-        author: bookAuthorElement.value,
-        category: bookCategoryElement.value,
-      }),
-    );
+    addBookMiddleware(dispatch, {
+      id: bookId,
+      title: bookTilteElement.value,
+      author: bookAuthorElement.value,
+      category: bookCategoryElement.value,
+    });
 
     bookId = '';
     bookTilteElement.value = '';
