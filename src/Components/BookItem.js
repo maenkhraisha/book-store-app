@@ -1,4 +1,7 @@
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import PropTypes from 'prop-types';
+import '../Styles/book-item.css';
 
 const BookItem = ({
   id,
@@ -9,13 +12,31 @@ const BookItem = ({
 }) => (
   <li key={id}>
     <div className="book-item-container">
-      <p>{category}</p>
-      <h3>{title}</h3>
-      <p>{author}</p>
-      <div className="button-container">
-        <button type="button">comment</button>
-        <button onClick={onRemove} type="button">remove</button>
-        <button type="button">edit</button>
+      <div className="book-info-container">
+        <p className="book-category">{category}</p>
+        <h3 className="book-title">{title}</h3>
+        <p className="book-author">{author}</p>
+        <div className="button-container">
+          <button type="button">comment</button>
+          <span />
+          <button type="button" onClick={onRemove}>
+            remove
+          </button>
+          <span />
+          <button type="button">edit</button>
+        </div>
+      </div>
+      <div className="circular-progressbar progress">
+        <CircularProgressbar className="progresBar" value={50} />
+      </div>
+      <div className="progress-text-container">
+        <span className="persentage-text">0%</span>
+        <span className="completed-text">Completed</span>
+      </div>
+      <div className="progress-chapter-container">
+        <span className="current-chapter-text">CURRENT CHAPTER</span>
+        <span className="chapter-number-text">Chapter 17</span>
+        <button className="update-progress-btn" type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   </li>
