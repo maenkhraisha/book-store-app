@@ -1,22 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Roboto+Slab:wght@300;400;700&display=swap");
+
 .add-book-container {
   display: flex;
   flex-direction: column;
   margin: 6.25rem;
 }
+
 .add-book-container p {
   width: 10.875rem;
   height: 1.5rem;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
   white-space: nowrap;
 }
+
 .add-book-container .input-field-container {
   display: flex;
   flex-direction: row;
@@ -24,6 +27,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 .add-book-container .input-field-container input[type=text] {
   width: 20%;
   height: 1.5rem;
@@ -31,19 +35,23 @@
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
+
 .add-book-container .input-field-container input[type=text]::-moz-placeholder {
   opacity: 0.3;
 }
+
 .add-book-container .input-field-container input[type=text]:-ms-input-placeholder {
   opacity: 0.3;
 }
+
 .add-book-container .input-field-container input[type=text]::placeholder {
   opacity: 0.3;
 }
+
 .add-book-container .input-field-container input[type=submit] {
   width: 20%;
   height: 1.5rem;
   border-radius: 3px;
   border: none;
   background-color: #0290ff;
-}/*# sourceMappingURL=add-book.css.map */
+}

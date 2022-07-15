@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Roboto+Slab:wght@300;400;700&display=swap");
+
 .book-item-container {
   display: flex;
   justify-content: space-between;
@@ -10,6 +11,7 @@
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
+
 .book-item-container .book-info-container {
   display: flex;
   flex-direction: column;
@@ -17,12 +19,13 @@
   margin: 0;
   padding: 0;
 }
+
 .book-item-container .book-info-container .book-category {
   width: 3.063rem;
   padding: 0;
   margin: 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -31,11 +34,12 @@
   letter-spacing: normal;
   color: #121212;
 }
+
 .book-item-container .book-info-container .book-title {
   width: 12.313rem;
   padding: 0;
   margin: 0.25rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -44,11 +48,12 @@
   letter-spacing: -0.2px;
   color: #121212;
 }
+
 .book-item-container .book-info-container .book-author {
   width: 6.688rem;
   padding: 0;
   margin: 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -57,14 +62,16 @@
   letter-spacing: normal;
   color: #4386bf;
 }
+
 .book-item-container .book-info-container .button-container {
   margin: 1rem 0 0 0;
 }
+
 .book-item-container .book-info-container .button-container button {
   height: 1.188rem;
   margin: 0;
   padding: 0.5rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -76,21 +83,25 @@
   background-color: #fff;
   cursor: pointer;
 }
+
 .book-item-container .book-info-container .button-container span {
   width: 0.125rem;
   height: 1.5rem;
   border: solid 1px #e8e8e8;
 }
+
 .book-item-container .progress {
   width: 4.25rem;
   height: 4.25rem;
 }
+
 .book-item-container .progress-text-container {
   display: flex;
   flex-direction: column;
 }
+
 .book-item-container .progress-text-container .persentage-text {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -99,9 +110,10 @@
   letter-spacing: normal;
   color: #121212;
 }
+
 .book-item-container .progress-text-container .completed-text {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -110,14 +122,16 @@
   letter-spacing: normal;
   color: #121212;
 }
+
 .book-item-container .progress-chapter-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .book-item-container .progress-chapter-container .current-chapter-text {
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -126,8 +140,9 @@
   letter-spacing: normal;
   color: #121212;
 }
+
 .book-item-container .progress-chapter-container .chapter-number-text {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -136,12 +151,13 @@
   letter-spacing: -0.4px;
   color: #121212;
 }
+
 .book-item-container .progress-chapter-container .update-progress-btn {
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   border: none;
   background-color: #0290ff;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -150,4 +166,4 @@
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
-}/*# sourceMappingURL=book-item.css.map */
+}

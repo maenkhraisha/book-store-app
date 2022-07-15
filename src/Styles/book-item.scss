@@ -1,27 +1,29 @@
 @import './variables.scss';
 
 .book-item-container {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap:0.5rem;
+  gap: 0.5rem;
   margin: 0 $mainPadding;
   padding: 1.5rem 2rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #fff;   
-  .book-info-container{
+  background-color: #fff;
+
+  .book-info-container {
     display: flex;
     flex-direction: column;
-    width: 50%;  
+    width: 50%;
     margin: 0;
-    padding: 0;   
+    padding: 0;
+
     .book-category {
       width: 3.063rem;
       padding: 0;
       margin: 0;
       opacity: 0.5;
-      font-family: Montserrat;
+      font-family: Montserrat, Arial, sans-serif;
       font-size: 0.875rem;
       font-weight: bold;
       font-stretch: normal;
@@ -30,11 +32,12 @@
       letter-spacing: normal;
       color: #121212;
     }
-    .book-title{
+
+    .book-title {
       width: 12.313rem;
       padding: 0;
       margin: 0.25rem 0;
-      font-family: RobotoSlab;
+      font-family: RobotoSlab, Arial, sans-serif;
       font-size: 1.375rem;
       font-weight: bold;
       font-stretch: normal;
@@ -43,11 +46,12 @@
       letter-spacing: -0.2px;
       color: #121212;
     }
-    .book-author{
+
+    .book-author {
       width: 6.688rem;
       padding: 0;
-      margin: 0;     
-      font-family: RobotoSlab;
+      margin: 0;
+      font-family: RobotoSlab, Arial, sans-serif;
       font-size: 0.875rem;
       font-weight: 300;
       font-stretch: normal;
@@ -56,13 +60,15 @@
       letter-spacing: normal;
       color: #4386bf;
     }
-    .button-container{
-      margin: 1rem 0 0 0;         
+
+    .button-container {
+      margin: 1rem 0 0 0;
+
       button {
-        height: 1.188rem;  
+        height: 1.188rem;
         margin: 0;
-        padding: 0.5rem;    
-        font-family: RobotoSlab;
+        padding: 0.5rem;
+        font-family: RobotoSlab, Arial, sans-serif;
         font-size: 0.875rem;
         font-weight: 300;
         font-stretch: normal;
@@ -70,26 +76,30 @@
         line-height: normal;
         letter-spacing: normal;
         color: #4386bf;
-        border:none;
+        border: none;
         background-color: #fff;
         cursor: pointer;
       }
-      span{
+
+      span {
         width: 0.125rem;
         height: 1.5rem;
         border: solid 1px #e8e8e8;
       }
     }
   }
-  .progress{
+
+  .progress {
     width: 4.25rem;
-    height: 4.25rem;          
+    height: 4.25rem;
   }
-  .progress-text-container{
+
+  .progress-text-container {
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;
+
     .persentage-text {
-      font-family: Montserrat;
+      font-family: Montserrat, Arial, sans-serif;
       font-size: 2rem;
       font-weight: normal;
       font-stretch: normal;
@@ -98,9 +108,10 @@
       letter-spacing: normal;
       color: #121212;
     }
+
     .completed-text {
       opacity: 0.5;
-      font-family: Montserrat;
+      font-family: Montserrat, Arial, sans-serif;
       font-size: 0.875rem;
       font-weight: normal;
       font-stretch: normal;
@@ -110,13 +121,15 @@
       color: #121212;
     }
   }
-  .progress-chapter-container{
+
+  .progress-chapter-container {
     display: flex;
-    flex-direction: column; 
-    gap:0.5rem;   
-    .current-chapter-text{
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .current-chapter-text {
       opacity: 0.5;
-      font-family: RobotoSlab;
+      font-family: RobotoSlab, Arial, sans-serif;
       font-size: 0.813rem;
       font-weight: 300;
       font-stretch: normal;
@@ -125,8 +138,9 @@
       letter-spacing: normal;
       color: #121212;
     }
-    .chapter-number-text{
-      font-family: RobotoSlab;
+
+    .chapter-number-text {
+      font-family: RobotoSlab, Arial, sans-serif;
       font-size: 1rem;
       font-weight: 300;
       font-stretch: normal;
@@ -134,15 +148,14 @@
       line-height: normal;
       letter-spacing: -0.4px;
       color: #121212;
-    
     }
-    .update-progress-btn{
+
+    .update-progress-btn {
       padding: 0.438rem 1.188rem 0.5rem 1.375rem;
       border-radius: 3px;
       border: none;
       background-color: #0290ff;
-
-      font-family: RobotoSlab;
+      font-family: RobotoSlab, Arial, sans-serif;
       font-size: 0.813rem;
       font-weight: 300;
       font-stretch: normal;
@@ -153,5 +166,4 @@
       color: #fff;
     }
   }
-  
 }
