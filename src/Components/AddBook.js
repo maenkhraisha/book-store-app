@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-// import { addBook } from '../redux/books/books';
 import { addBookMiddleware } from '../redux/middleware';
+import '../Styles/add-book.css';
 
 // const categoriesList = [
 //   { id: 1, title: 'Action' },
@@ -32,19 +32,21 @@ const AddBook = () => {
     bookCategoryElement.value = '';
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="add-book-container" onSubmit={handleSubmit}>
       <p>ADD NEW BOOK</p>
-      <input type="text" placeholder="Book Title" name="bookTitle" />
-      <input type="text" placeholder="Book Author" name="bookAuthor" />
-      <input type="text" placeholder="Book Category" name="bookCategory" />
-      {/* <select>
+      <div className="input-field-container">
+        <input type="text" placeholder="Book Title" name="bookTitle" required />
+        <input type="text" placeholder="Book Author" name="bookAuthor" required />
+        <input type="text" placeholder="Book Category" name="bookCategory" required />
+        {/* <select>
         {categoriesList.map((category) => (
           <option key={category.id} value={category.title}>
             {category.title}
           </option>
         ))}
       </select> */}
-      <input type="submit" value="ADD BOOK" />
+        <input type="submit" value="ADD BOOK" />
+      </div>
     </form>
   );
 };
