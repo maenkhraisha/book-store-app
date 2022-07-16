@@ -20,7 +20,7 @@
 ## Live Demo 
 
 Go to live demo : 
-Comming Soon
+https://maenkhraisha.github.io/book-store-app/
 
 ## out resourse
 
