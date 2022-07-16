@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/maenkhraisha/book-store-app.git/static/css/main.67ddf08a.css",
+    "main.js": "/maenkhraisha/book-store-app.git/static/js/main.4c6b2a2d.js",
+    "static/js/787.3f615866.chunk.js": "/maenkhraisha/book-store-app.git/static/js/787.3f615866.chunk.js",
+    "index.html": "/maenkhraisha/book-store-app.git/index.html",
+    "main.67ddf08a.css.map": "/maenkhraisha/book-store-app.git/static/css/main.67ddf08a.css.map",
+    "main.4c6b2a2d.js.map": "/maenkhraisha/book-store-app.git/static/js/main.4c6b2a2d.js.map",
+    "787.3f615866.chunk.js.map": "/maenkhraisha/book-store-app.git/static/js/787.3f615866.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67ddf08a.css",
+    "static/js/main.4c6b2a2d.js"
+  ]
+}
